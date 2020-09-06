@@ -1,5 +1,8 @@
 # DLR
 
+DLR is short for Dealer. This app is a random pool holder that allows you to create users and pools which they can be in that can be though of as markets almost. Every 24 hours there is a set time for their to be a "roll" and it is decided if that 'pool' crashes or not. Do not since this was a hackathon, some of the things that we wanted to get done with the Front end web side did not happen. I will link to the IOS app that pairs with the application as well.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
