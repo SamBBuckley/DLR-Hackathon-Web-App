@@ -1,0 +1,32 @@
+<div class="pool-landing">
+  <div *ngFor="let pool of this.pools">
+    <br>
+    <br>
+    <mat-card>
+      <mat-card-title>
+        {{ this.pool.name }}
+      </mat-card-title>
+      <mat-card-content class="pool-content-area">
+        Has busted: {{ this.pool.hasBusted }}
+        <br>
+        Is Timed: {{ this.pool.isTimed }}
+        <br>
+        Balance: {{ this.pool.balance }}
+        <br>
+        Chance to bust: {{ this.pool.chanceToBust }}
+        <br>
+        Last Roll Date: {{ this.pool.lastRoll }}
+        <br>
+        Name: {{ this.pool.name}}
+        <br>
+        Winner: {{ this.pool.winner }}
+        <br>
+        Daily Cost: {{ this.pool.dailyCost }}
+        <br>
+        <app-pool-delete-button [pool]="this.pool"></app-pool-delete-button>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

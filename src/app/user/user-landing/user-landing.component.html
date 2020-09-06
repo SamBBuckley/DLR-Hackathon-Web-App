@@ -1,0 +1,18 @@
+<div class="user-landing">
+  <div *ngFor="let user of this.users">
+    <br>
+    <br>
+    <mat-card>
+      <mat-card-title>
+        {{ this.user.name }}
+      </mat-card-title>
+      <mat-card-content>
+        Users Email: {{ this.user.email }}
+        <br>
+        Users Balance: {{ this.user.balance }}
+        <br>
+        <app-user-delete-button [user]="this.user"></app-user-delete-button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

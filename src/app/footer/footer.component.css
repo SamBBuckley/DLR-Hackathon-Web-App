@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+}
+
+ h2 {
+  color: white;
+   margin: 0;
+   font-family: 'Kufam', cursive;
+   font-size: 25px;
+}
+
+ p {
+   color: white;
+   font-family: 'Kufam', cursive;
+   font-size: 14px;
+ }

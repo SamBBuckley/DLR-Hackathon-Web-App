@@ -5,13 +5,14 @@ const Schema = mongoose.Schema;
 const poolSchema = new Schema({
   id: String,
   name: String,
-  lastRoll: Date,
+  lastRoll: String,
   balance: Number,
   winner: String,
   users: [User.schema],
   chanceToBust: Number,
   hasBusted: Boolean,
-  isTimed: Boolean
+  isTimed: Boolean,
+  dailyCost: Number,
 });
 
 module.exports = mongoose.model('Pool', poolSchema);
