@@ -12,7 +12,7 @@ function rollTimedPools() {
       const oldDate = new Date(pool.lastRoll);
       if(pool.isTimed === true) { // This pool is timed
 
-        if(new Date - oldDate >= 10000) { // Ready to roll
+        if(new Date - oldDate >= 86400000) { // Ready to roll
 
           if(!pool.hasBusted) {
             let i = 0;
@@ -48,7 +48,7 @@ function rollTimedPools() {
       }
     });
   });
-  setTimeout(rollTimedPools, 5000);
+  setTimeout(rollTimedPools, 600000);
 }
 
 module.exports = rollTimedPools();
